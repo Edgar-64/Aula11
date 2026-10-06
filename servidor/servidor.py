@@ -26,5 +26,8 @@ def evento():
         "mensagem": "Evento recebido pelo servidor"
     })
 
+@app.route("/", methods=["GET"])
+def inicio():
+    return "Servidor IoT funcionando!"
 
 app.run(host="0.0.0.0", port=5000)
